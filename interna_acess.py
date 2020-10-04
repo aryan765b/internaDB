@@ -1,5 +1,5 @@
 import urllib.request, json 
-addr = "http://127.0.0.1:5000/"#sir change this link to the link i have shared ebery time the server restarts it changes
+addr = "http://127.0.0.1:5000/"#change this link to the link i have shared ebery time the server restarts it changes
 def get_val(tag):
     with urllib.request.urlopen(addr+"get/"+tag.replace(" ",'%20')) as url:
         tag = tag.replace("%20"," ")
